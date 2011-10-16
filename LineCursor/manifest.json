@@ -1,0 +1,25 @@
+{
+  // Required
+  "name": "Line Cursor",
+  "version": "0.0.1",
+
+  // Recommended
+  "description": "This add on is used to help reading web-pages. The add-on would change the cursor to a horizontal page wide line.",
+  "icons": { "48":"minus48.png", "128":"minus128.png" },
+  
+  // Pick one (or none)
+  "browser_action": {
+    "default_icon": "minus19.png", 	// optional
+    "default_title": "Line Your Cursor"      // optional; shown in tooltip
+      },
+  
+  // Add any of these that you need
+  "background_page": "background.html",
+  "content_scripts": [
+	  {
+	  "matches": ["http://*/*", "https://*/*"],
+	  "js": ["jquery.min.js", "linecursor.js"]
+	  }],
+  "permissions": ["tabs", "http://*/*", "https://*/*"]
+  
+}
