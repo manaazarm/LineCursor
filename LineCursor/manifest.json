@@ -20,6 +20,7 @@
 	  "matches": ["http://*/*", "https://*/*"],
 	  "js": ["jquery.min.js", "linecursor.js"]
 	  }],
-  "permissions": ["tabs", "http://*/*", "https://*/*"]
-  
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
+
+	"update_url":"https://raw.github.com/manaazarm/LineCursor/master/LineCursor/Package/linecursor.xml"  
 }
